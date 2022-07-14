@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./bootstrap.css">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <title>main page</title>
+</head>
+<body>
+  <section class=" mx-auto row   ">
+    <ul id="bgblue" class="sidebar-dropdown   list-unstyled col-lg-2 col-md-4   text-center">
+      <li id="user" class="col-12 text-light d-flex  pt-3  ">
+        <img id="img" src="img/profile.PNG" alt="" height="60px">
+        <div class="">
+          <div class="">
+            <div class=" ms-3 mt-2">
+              <p id="us"></p>
+            </div>
+            <p class="text-success">Online</p>
+          </div>
+        </div>
+      </li>
+      <hr class="text-light">
+      <li class="py-2 mt-3 ms-3  fs-4 text-light">General </li>
+      <hr class="text-light">
+      <div class="py-3">
+        <li class="btn1 col-12  ms-3 py-2 "> <i class="fa fa-user-circle text-light" aria-hidden="true"></i> <a class=""
+            href="dashbord.html">Profile</a> </li>
+      </div>
+      <div class="py-3 d-flex">
+
+        <li class="btn1 col-12  ms-3 py-2 "><i class="fa fa-book col-1 text-light" aria-hidden="true"></i><a
+            href="note.html">Notes</a> </li>
+      </div>
+
+      <div class="py-3">
+        <li class="btn1 col-12  ms-3 py-2 "> <i class="fa fa-clock-o text-light" aria-hidden="true"></i> <a class=""
+            href="event.html">Events</a> </li>
+      </div>
+
+      <div class="py-3">
+        <li class="btn1 col-12 ms-3  py-2 "> <i class="fa fa-book text-light" aria-hidden="true"></i> <a class=""
+            href="contact.html">Contact</a> </li>
+      </div>
+      <div class="py-3">
+        <li class="btn1 col-12 ms-3  py-2 "> <i class="fa fa-book text-light" aria-hidden="true"></i> <a class=""
+            href="index.html">Logout</a> </li>
+      </div>
+
+    
+    </ul>
+    <div class="  bg-light col-lg-10 col-md-8 col-sm-11 ">
+      <header>
+        <nav class="navbar navbar-expand-lg col-12  navbar-dark ">
+          <div style="font-family: italic;" class="dress col-1 ms d-flex align-items-center justify-content-center text-light h5">Gpro</div>
+          <div class="container-fluid">
+            <h4 class="nav">Gitpro</h4>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item ms-4">
+                  <a class="nav-link  nav" href="signin.html">sign in</a>
+                </li>
+                <li class="nav-item ms-4">
+                  <a class="nav-link   " href="edit.html">Edit</a>
+                </li>
+                <li class="nav-item dropdown ms-5">
+                  <a class="nav-link dropdown-toggle nav" href="#" id="navbarDropdown" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    Others
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="alam.html">Alam</a></li>
+                    <li><a class="dropdown-item" href="currentlocation.html">current location</a></li>
+                  
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success text-light btns" type="submit">Search</button>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <section id="main" style="height: 91vh;" class=" col-12 text-center">
+        <div class="sticky-top">
+          <h3 class="p-3">Click The Button Below To Add Contact</h3>
+        <button type="button" class="btn btn-primary mb-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          clik here 
+        </button>
+        </div>
+        <div id="file" class="col-12 row mx-auto  "></div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Add Contact</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <input type="text" class='form-control p-3' id='nam' placeholder="name">
+                <input type="text" class='form-control p-3' id='phoneno' placeholder="phone number">
+                <input type="text" class='form-control p-3' id='gmail' placeholder=" Email">
+                <textarea class="form-control" id="add" rows="3" placeholder="Enter Address"></textarea>
+                
+                
+
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal" onclick="saveNote()">save</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Add Contact</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <input type="text" class='form-control p-3' id='nam2' placeholder="name">
+                <input type="text" class='form-control p-3' id='phoneno2' placeholder="phone number">
+                <input type="text" class='form-control p-3' id='gmail2' placeholder=" Email">
+                <textarea class="form-control" id="add2" rows="3" placeholder="Enter Address"></textarea>
+                
+                
+
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal" onclick="saveNote()">save</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        
+      </section>
+        
+
+    </div>
+
+
+
+  </section>
+
+
+
+  <script src="./bootstrap.js"></script>
+  
+  <script>
+    let all;
+
+    let type = localStorage.contact ? JSON.parse(localStorage.getItem("contact")) : [];
+    let userdetails = JSON.parse(localStorage.getItem("project"));
+    let user_mail = localStorage.getItem("email")
+     console.log(userdetails);
+    let emailFinder = userdetails.find((val) => val.Email == user_mail);
+
+    console.log(userdetails);
+    if (emailFinder) {
+
+      us.innerHTML = emailFinder.ffname + '  ' + '  ' + emailFinder.LstName;
+      let show = "";
+      for (let index = 0; index < emailFinder.contact.length; index++) {
+        show += `<div class="container note col-lg-3  col-md-3 col-sm-6 mx-auto card   mb-3 d-flex justify-content-around"> <p class''> ${emailFinder.contact[index].username} </p>   <p> ${emailFinder.contact[index].phone} </p>   <p class="fs-5 "> ${emailFinder.contact[index].mail} </p>   <p class=""> ${emailFinder.contact[index].Address} </p> <div class='d-flex col-8 mx-auto text-center'><button i class='col-5 mx-auto btn3 p-2 ' onclick='edit(${index})' data-bs-toggle='modal' data-bs-target='#exampleModal1'><i class='fa fa-pencil fs-4'></i></button><button class='col-5 mx-auto my-1 btn3 p-2' onclick='delItem(${index})'><i class='fa fa-trash fs-4'  ></i></button></div>  </div> `
+
+      }
+      file.innerHTML = show ? show : "";
+
+console.log();
+    }
+
+    let f = "";
+    let narray;
+    function saveNote() {
+    
+      let username = nam.value;
+      let phone= phoneno.value;
+      let Address= add.value;
+      let mail= gmail.value;
+     if(nam.value !=""||phoneno.value !="" ||add.value !="" ||gmail.value !=""){
+      let index = sarchindex(emailFinder);
+      
+      console.log(username, phone,Address,mail );
+       
+       
+      emailFinder.contact.push({ username: username, phone:phone, Address: Address, mail: mail });
+      userdetails[index] = emailFinder;
+      save(userdetails);
+     }
+     location.reload()
+      
+    }
+      // console.log(  username,  phone, mail, Address);
+    function delItem(param) {
+      let index = sarchindex(emailFinder);
+      var conf= confirm("Are You Sure You Want To Delete")
+      if(conf){
+      let delevent = emailFinder.contact.filter((e, index) => {
+
+        return index != param
+      })
+
+      console.log(userdetails[index]);
+      userdetails[index].contact = delevent;
+      save(userdetails);
+      location.reload()
+    }
+    }
+    function save(data) {
+      localStorage.project = JSON.stringify(data);
+
+    }
+    function sarchindex(params) {
+      return userdetails.indexOf(params)
+    }
+    function edit(param) {
+      let index = sarchindex(emailFinder);
+      let delevent = emailFinder.contact.filter((e, index) => {
+        all = index
+
+        return index == param
+      })
+      nam2.value = delevent[0].username
+      phoneno2.value = delevent[0].phone
+      mail2.value = delevent[0].mail
+      add2.value = delevent[0].Address
+
+      console.log(nam2.value = delevent[0].username);
+
+    }
+
+    function saveEdit() {
+      let index = sarchindex(emailFinder);
+      emailFinder.contact[all].username = nam2.value;
+      emailFinder.contact[all].phone = phoneno2.value;
+      emailFinder.contact[all].mail = mail2.value;
+      emailFinder.contact[all].Address = add2.value;
+      userdetails[index] = emailFinder
+      // console.log(userdetails);
+      save(userdetails)
+      location.reload()
+
+    }
+   
+</script>

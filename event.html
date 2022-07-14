@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./bootstrap.css">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <title>main page</title>
+</head>
+
+<body>
+  <section class=" mx-auto row   ">
+    <ul id="bgblue" class="sidebar-dropdown   list-unstyled col-lg-2 col-md-4   text-center">
+      <li id="user" class="col-12 text-light d-flex  pt-3  ">
+        <img id="img" src="img/profile.PNG" alt="" height="60px">
+        <div class="">
+          <div class="">
+            <div class=" ms-3 mt-2">
+              <p id="nam2"></p>
+            </div>
+            <p class="text-success">Online</p>
+          </div>
+        </div>
+      </li>
+      <hr class="text-light">
+      <li class="py-2 mt-3 ms-3  fs-4 text-light">General </li>
+      <hr class="text-light">
+      <div class="py-3">
+        <li class="btn1 col-12  ms-3 py-2 "> <i class="fa fa-user-circle text-light" aria-hidden="true"></i> <a class=""
+            href="dashbord.html">Profile</a> </li>
+      </div>
+      <div class="py-3 d-flex">
+
+        <li class="btn1 col-12  ms-3 py-2 "><i class="fa fa-book col-1 text-light" aria-hidden="true"></i><a
+            href="note.html">Notes</a> </li>
+      </div>
+
+      <div class="py-3">
+        <li class="btn1 col-12  ms-3 py-2 "> <i class="fa fa-clock-o text-light" aria-hidden="true"></i> <a class=""
+            href="event.html">Events</a> </li>
+      </div>
+
+      <div class="py-3">
+        <li class="btn1 col-12 ms-3  py-2 "> <i class="fa fa-book text-light" aria-hidden="true"></i> <a class=""
+            href="contact.html">Contact</a> </li>
+      </div>
+      <div class="py-3">
+        <li class="btn1 col-12 ms-3  py-2 "> <i class="fa fa-book text-light" aria-hidden="true"></i> <a class=""
+            href="index.html">Logout</a> </li>
+      </div>
+
+
+    </ul>
+    <div class="  bg-light col-lg-10 col-md-8 col-sm-11 ">
+      <header>
+        <nav class="navbar navbar-expand-lg col-12  navbar-dark ">
+          <div style="font-family: italic;"
+            class="dress col-1 ms d-flex align-items-center justify-content-center text-light h5">Gpro</div>
+          <div class="container-fluid">
+            <h4 class="nav">Gitpro</h4>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item ms-4">
+                  <a class="nav-link  nav" href="signin.html">sign in</a>
+                </li>
+                <li class="nav-item ms-4">
+                  <a class="nav-link   " href="edit.html">Edit</a>
+                </li>
+                <li class="nav-item dropdown ms-5">
+                  <a class="nav-link dropdown-toggle nav" href="#" id="navbarDropdown" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    Others
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="alam.html">Alam</a></li>
+                    <li><a class="dropdown-item" href="currentlocation.html">current location</a></li>
+                  
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success text-light btns" type="submit">Search</button>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <section id="main" style="height: 91vh;" class=" col-12 text-center">
+        <div class="sticky-top">
+          <h3 class="p-3">Click The Button Below To Add New</h3>
+        <button type="button" class="btn btn-primary mb-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          clik here
+        </button>
+        </div>
+        <div id="test"></div>
+
+      
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">To do</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <input type="text" class='form-control p-3' id='things' placeholder="what did you want to do">
+                <input type="time" class='form-control p-3' id='eventtime' placeholder="00:00:00 PM">
+                <small id="mt"></small>
+
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal" onclick="dome()">save</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Edit Todo</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <input type="text" class='form-control p-3' id='thin' placeholder="what did you want to do">
+                <input type="time" class='form-control p-3' id='even' placeholder="00:00:00 PM">
+
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" onclick="saveEdit()">save</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="wow" class="  mx-auto">
+          <div id="ok" class="  ">
+            <table class="table table-bordered shadow my-3 text-center">
+              <thead class=" h4">
+
+                <th>Event</th>
+                <th>Event Time</th>
+                <th>Date</th>
+                <th>Time</th>
+                <th colspan="2">Actions</th>
+              </thead>
+              <tbody id="file" class="h-25 p-3 ">
+
+              </tbody>
+          </div>
+
+          </table>
+
+        </div>
+      </section>
+    </div>
+
+
+
+  </section>
+
+
+
+  <script src="./bootstrap.js"></script>
+  <script>
+    let all;
+    let todo = localStorage.events ? JSON.parse(localStorage.getItem("events")) : [];
+    let userdetails = JSON.parse(localStorage.getItem("project"));
+    let user_mail = localStorage.getItem("email")
+     console.log(userdetails);
+    let emailFinder = userdetails.find((val) => val.Email == user_mail);
+
+    console.log(emailFinder);
+    if (emailFinder) {
+
+      nam2.innerHTML = emailFinder.ffname + '  ' + '  ' + emailFinder.LstName;
+      let show = "";
+      for (let index = 0; index < emailFinder.Event.length; index++) {
+        show += `<tr class'my-3'> <td> ${emailFinder.Event[index].event} </td>   <td> ${emailFinder.Event[index].eventime} </td>   <td> ${emailFinder.Event[index].date} </td>   <td> ${emailFinder.Event[index].time} </td> <td><i class='fa fa-pencil btn btn-success'onclick='edit(${index})' data-bs-toggle='modal' data-bs-target='#exampleModal1'></i></td><td><i class='fa fa-trash btn btn-danger '  onclick='delItem(${index})'></i></td> </tr> `
+
+
+      }
+      file.innerHTML = show ? show : "";
+
+    
+    }
+
+
+    let f = "";
+    let narray;
+    function dome() {
+      let date = new Date().toLocaleDateString();
+      let time = new Date().toLocaleTimeString();
+      let event = things.value;
+      let eventime = eventtime.value;
+      console.log(event);
+      if(things.value !="" ||eventtime.value !=""){
+        let index = sarchindex(emailFinder);
+        console.log(index);
+        emailFinder.Event.push({ time: time, date: date, eventime: eventime, event: event });
+        userdetails[index] = emailFinder;
+        save(userdetails);
+        location.reload()
+      }
+      
+
+    }
+    function delItem(param) {
+
+      let index = sarchindex(emailFinder);
+    
+      var conf= confirm("Are You Sure You Want To Delete")
+          if(conf){
+            let delevent = emailFinder.Event.filter((e, index) => {
+
+return index != param
+
+})
+
+console.log(userdetails[index]);
+userdetails[index].Event = delevent;
+save(userdetails);
+location.reload()
+          }
+     
+     
+
+    }
+    function save(data) {
+      localStorage.project = JSON.stringify(data);
+
+    }
+    function sarchindex(params) {
+      return userdetails.indexOf(params)
+    }
+    function edit(param) {
+      let index = sarchindex(emailFinder);
+      let delevent = emailFinder.Event.filter((e, index) => {
+        all = index
+
+        return index == param
+      })
+      thin.value = delevent[0].event
+      even.value = delevent[0].eventime
+
+      console.log(delevent);
+      
+    
+
+    }
+
+    function saveEdit() {
+      let index = sarchindex(emailFinder);
+      emailFinder.Event[all].eventime = even.value;
+      emailFinder.Event[all].event = thin.value;
+      userdetails[index] = emailFinder
+      console.log(userdetails);
+      save(userdetails)
+      location.reload()
+
+    }
+    
+    ringTone = new Audio('img/alarm.mp3')
+    function alarm() {
+      let alam = emailFinder.Event.find(element => {
+        return new Date (element.date + " " + element.eventime).toLocaleString()==new Date().toLocaleString()
+      })
+      
+      if (alam) {
+        ringTone.play();
+        // alert(" time up")
+      }
+    }
+    setInterval(()=>{
+      alarm()
+
+    } ,1000)
+
+
+
+  </script>
+  

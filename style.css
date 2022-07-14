@@ -1,0 +1,119 @@
+#bgblue{
+    background-color:#15273B;
+  
+}
+.btn1 a{
+    border: none;
+   background: none;
+   color: white;
+    /* font-weight: bold; */
+    font-size: larger;
+    }
+  a{
+    text-decoration: none;
+  }
+  a:hover{
+    color:white;
+  }  
+ #user{
+  height: 12vh;
+  margin-left: 1px;
+ }
+ #select{
+    background: none;
+    color:black;
+    border: none;
+    font-size: larger;
+ }
+ 
+ .dress{
+  height: 6vh;
+  width: 70px;
+  border-radius: 40px 0px 30px 0px;
+  background-color: #FF5722;
+ }
+  
+    
+    
+    .btn1:hover{
+border: solid#FF5722;
+
+background-color: #FF5722;
+color:white;
+
+right: 0px;
+border-radius: 40px 0 0 40px;
+
+    }
+    #img{
+      border-radius: 300px;
+    }
+    .nav{
+      color: white;
+
+    }
+    .navbar{
+      background-color: #15283C;
+      margin-left: -8px;
+
+    }
+    #pro{
+      margin-left: -8px;
+    }
+    .btns{
+      background-color: #FF5722;
+    }
+
+    .boda{
+      background:#0069DA ;
+      border-color:#0069DA;
+      color: white;
+      border-radius: 5px;
+  }
+  .boda:hover{
+      background-color:#38C5D9;
+      border-color: white;
+      border-radius: 5px;
+      transform: translateY(10px);
+      transition: 1s all ease-out;
+  }
+#bodda{
+  border-radius: 50px;
+}
+#size{
+  font-family: italic;
+  font-size: larger;
+  font-weight: bolder;
+  text-transform: capitalize;
+}
+#main{
+  overflow: scroll;
+  
+}
+.note{
+  background-color: ghostwhite;
+  box-shadow: 0px 1px 2px 1px;
+  box-shadow: 20px;
+  
+}
+.date{
+  float: left;
+}
+#pass{
+  border: none;
+}
+.btn3{
+  background: none;
+  border-color: white;
+  color: black;
+  border-radius: 10px;
+
+}
+.btn3:hover{
+  background-color:black;
+  border-color: white;
+  color:white;
+  border-radius: 10px;
+  /* transform: translateY(6px); */
+  transition: 1s all ease-out;
+}
