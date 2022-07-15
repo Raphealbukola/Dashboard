@@ -50,7 +50,7 @@ function show(){
 
           
           else {
-            // raph = JSON.parse(localStorage.getItem("project"));
+          
             allUsers.push(rush)
             localStorage.project = JSON.stringify(allUsers)
             console.log(allUsers)

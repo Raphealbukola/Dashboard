@@ -171,10 +171,11 @@
           var f ='';
           
         for(let i = 0; i < userdetails.length; i++){
-          f= "<tr>"+"<td>"+userdetails[i].ffname+"</td><td>"+userdetails[i].LstName+"</td><td>"+userdetails[i].Email+"</td><td>"+userdetails[i].phone +"</td><td>" +userdetails[i].Gender+ "</td><td>" +userdetails[i].Password+"</td><td>"+userdetails[i].Address +"</td>  <td><button class='btn btn-success'onclick='edit("+i+")'data-bs-toggle='modal' data-bs-target='#exampleModal'>Edit</button></td></tr>";
+          f= "<tr>"+"<td>"+userdetails[i].ffname+"</td><td>"+userdetails[i].LstName+"</td><td>"+userdetails[i].Email+"</td><td>"+userdetails[i].PhoneNumber +"</td><td>" +userdetails[i].Gender+ "</td><td>" +userdetails[i].Password+"</td><td>"+userdetails[i].Address +"</td>  <td><button class='btn btn-success'onclick='edit("+i+")'data-bs-toggle='modal' data-bs-target='#exampleModal'>Edit</button></td></tr>";
           console.log(userdetails[i]);
           document.getElementById("file").innerHTML = f;
       } 
+      
       
     //   function edit(i){
     //       
@@ -203,6 +204,37 @@
     //   }
       
       
+    }
+    function edit(param) {
+      let index = sarchindex(emailFinder);
+      let delevent = emailFinder.userdetails.filter((e, index) => {
+        all = index
+
+        return index == param
+      })
+      firame.value = delevent[0].ffname
+      lasame.value = delevent[0].LstName
+      PASSWORD.value = delevent[0].Password
+      genda.value = delevent[0].Gender
+      phonum.value = delevent[0].PhoneNumber
+      loca.value = delevent[0].Address
+
+      // console.log(delevent);
+
+    }
+
+    function saveEdit() {
+      let index = sarchindex(emailFinder);
+      emailFinder.userdetails[all].ffname = firame.value;
+      emailFinder.userdetails[all].LstName = lasame.value;
+      emailFinder.userdetails[all].Password = PASSWORD.value;
+      emailFinder.userdetails[all].Gender = genda.value;
+      emailFinder.userdetails[all].PhoneNumber = phonum.value;
+      emailFinder.userdetails[all].Address = loca.value;
+      userdetails[index] = emailFinder
+      // console.log(userdetails);
+      save(userdetails)
+
     }
     </script>
     
