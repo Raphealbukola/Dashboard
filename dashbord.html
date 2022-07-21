@@ -5,172 +5,180 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./bootstrap.css">
-  <link rel="stylesheet" href="./style.css">
+  <title>Document</title>
+  <link rel="stylesheet" href="bootstrap.css">
+  <link rel="stylesheet" href="side.css">
+  <link rel="stylesheet" href="/style.css">
   <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-  <title>main page</title>
 </head>
+
 <body>
-  <section class=" mx-auto row   ">
-    <ul id="bgblue" class="sidebar-dropdown   list-unstyled col-lg-2 col-md-4   text-center">
-      <li id="user" class="col-12 text-light d-flex  pt-3  ">
-        <img id="img" src="img/profile.PNG" alt="" height="60px">
-        <div class="">
-          <div class="">
-            <div class=" ms-3 mt-2">
-              <p id="nam2"></p>
-            </div>
-            <p class="text-success">Online</p>
-          </div>
-        </div>
-      </li>
-      <hr class="text-light">
-      <li class="py-2 mt-3 ms-3  fs-4 text-light">General </li>
-      <hr class="text-light">
-      <div class="py-3">
-        <li class="btn1 col-12  ms-3 py-2 "> <i class="fa fa-user-circle text-light" aria-hidden="true"></i> <a class=""
-            href="dashbord.html">Profile</a> </li>
+  <header style="background-color:#15283C;" class="navbar sticky-top col-12 justify-content-end    ">
+    <div class="container-fluid ">
+      <div class=" d-flex pe-5">
+        <img id="img" src="img/profile.PNG" alt="" height="40px">
+        <p id="nam2" class="text-light mt-2"></p>
       </div>
-      <div class="py-3 d-flex">
+      <ul class=" me-auto mb-2 d-flex ">
 
-        <li class="btn1 col-12  ms-3 py-2 "><i class="fa fa-book col-1 text-light" aria-hidden="true"></i><a
-            href="note.html">Notes</a> </li>
-      </div>
-
-      <div class="py-3">
-        <li class="btn1 col-12  ms-3 py-2 "> <i class="fa fa-clock-o text-light" aria-hidden="true"></i> <a class=""
-            href="event.html">Events</a> </li>
-      </div>
-
-      <div class="py-3">
-        <li class="btn1 col-12 ms-3  py-2 "> <i class="fa fa-book text-light" aria-hidden="true"></i> <a class=""
-            href="contact.html">Contact</a> </li>
-      </div>
-      <div class="py-3">
-        <li class="btn1 col-12 ms-3  py-2 "> <i class="fa fa-book text-light" aria-hidden="true"></i> <a class=""
-            href="index.html">Logout</a> </li>
-      </div>
-      
-    
-    </ul>
-    <div class="  bg-light col-lg-10 col-md-8 col-sm-11 ">
-      <header>
-        <nav class="navbar navbar-expand-lg col-12  navbar-dark ">
-          <div style="font-family: italic;" class="dress col-1 ms d-flex align-items-center justify-content-center text-light h5">Gpro</div>
-          <div class="container-fluid">
-            <h4 class="nav">Gitpro</h4>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-              aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item ms-4">
-                  <a class="nav-link  nav" href="signin.html">sign in</a>
-                </li>
-                <li class="nav-item ms-4">
-                  <a class="nav-link   " href="edit.html">Edit</a>
-                </li>
-                <li class="nav-item dropdown ms-5">
-                  <a class="nav-link dropdown-toggle nav" href="#" id="navbarDropdown" role="button"
-                    data-bs-toggle="dropdown" aria-expanded="false">
-                    Others
-                  </a>
-                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item" href="alam.html">Alam</a></li>
-                    <li><a class="dropdown-item" href="currentlocation.html">current location</a></li>
-                  
-                    <li>
-                      <hr class="dropdown-divider">
-                    </li>
-                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                  </ul>
-                </li>
-              </ul>
-              <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success text-light btns" type="submit">Search</button>
-              </form>
-            </div>
-          </div>
-        </nav>
-      </header>
-      <section id="main" style="height: 91vh;" class=" col-12 justify-content-center">
-        <div id="pro" class="col-12 border border-5 d-flex justify-content-start">
-          <h5 class="ms-3">Profile</h3>
-        </div>
-        <div class="main col-12  d-flex align-items-center px-5 text-center  justify-content-center ">
-
-          <div class="col-10 d-flex align-items-center p-5 text-center  justify-content-center ">
-            <div id="bodda" class="modal-body    d-flex justify-content-center  border border-3  ">
-
-              <div class=" col-4 ">
-                <img id="img" src="img/profile.PNG" alt="" height="200px">
-                <p id="nam"></p>
-                <input id="boder" class="py-2" type="file" />
-                <div>
-                  <button class="boda col-8 p-2 mb-5" onclick="choose()">Edit Profile</button>
-
-                  <div id="two">
-
-                  </div>
-                  <div class="d-none" id="tt">
-                    <img id="im" src="/img/profile.PNG" alt="" height="55px">
-                    <img id="im" src="/img/profile.PNG" alt="" height="50px">
-                    <img id="im" src="/img/profile.PNG" alt="" height="50px">
-                  </div>
-
-                </div>
-              </div>
-              <div id="size" class="col-5 ms-4 d-flex align-items-center">
-
-                <div>
-
-                  <p id="fname"></p>
-
-                  <p id="lname"></p>
-                  <p id="gmail"></p>
-                  <p id="phone"></p>
-                  <p id="gend"></p>
-                  <p id="locate"></p>
-                  <input class="text-center " type="password" id="pass" disabled>
-                </div>
+        <li class="nav-item dropdown small2 ms-4">
+          <a class="nav-link dropdown-toggle nav need3"  id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            Others
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li class="">
+              <a class="dropdown-item" href="signin.html">sign in</a>
+            </li>
+          
+            <li><a class="dropdown-item" href="alam.html">Alam</a></li>
 
 
-              </div>
 
-
-            </div>
-          </div>
-        </div>
-       
-      </section>
-
+          </ul>
 
     </div>
 
 
 
-  </section>
+    <div class="navbar-nav">
+      <div class="nav-item text-nowrap text-light">
+        <button class="navbar-toggler position-absolute d-md-none collapsed text-light" type="button"
+          data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon text-light border border-1 "> <i class="fa-solid fa-align-justify"></i></span>
+        </button>
+      </div>
+    </div>
+  </header>
+  <div class="container-fluid">
+    <div class="row  ">
+      <nav id="sidebarMenu" class="col-md-3 col-lg-2  d-md-block sidebar collapse">
+        <div class="position-sticky ">
+
+          <ul id="bgblue" class="nav flex-column">
+
+            <li class="py-2 mt-3 ms-5  fs-5 text-light">General </li>
+            <hr class="text-light">
+            <li class="nav-item ">
+              <a class="nav-link btn1 ms-5 " href="dashbord.html">
+                <i class="fa fa-user-circle text-light" aria-hidden="true"></i>
+                profile
+              </a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link btn1 ms-5" href="note.html">
+                <i class="fa fa-book col-1 text-light" aria-hidden="true"></i>
+                Note
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link btn1 ms-5" href="event.html">
+                <i class="fa fa-clock-o text-light" aria-hidden="true"></i>
+                Event
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link btn1 ms-5" href="contact.html">
+                <i class="fa fa-book text-light" aria-hidden="true"></i>
+                Contact
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link btn1 ms-5" href="index.html">
+                <span data-feather="layers" class="align-text-bottom"></span>
+                Logout
+              </a>
+            </li>
+          </ul>
+
+
+          </ul>
+        </div>
+      </nav>
+
+      <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+        <div
+          class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+
+          <section id="main" style=" font-family: italic;" class=" col-12 text-center ">
+            <div id="pro" class="col-12 border border-5 d-flex justify-content-start">
+              <h5 class="ms-3">Profile</h3>
+            </div>
+            <div class="main col-lg-12 mt-5  d-flex align-items-center px-5 text-center  justify-content-center ">
+
+              <div class="col-lg-8 col-sm-12 d-flex align-items-center  text-center  justify-content-center ">
+                <div id="bodda" class="modal-body    d-flex justify-content-center  border border-3  ">
+
+                  <div class=" col-4 ">
+                    <img id="img" src="img/profile.PNG" alt="" height="200px">
+                    <p id="nam"></p>
+                    <input id="boder" class="py-2" type="file" />
+                    <div>
+                      <button class="boda col-8 p-2 mb-5" onclick="choose()">Edit Profile</button>
+
+                      <div id="two">
+
+                      </div>
+                      <div class="d-none" id="tt">
+                        <img id="im" src="/img/profile.PNG" alt="" height="55px">
+                        <img id="im" src="/img/profile.PNG" alt="" height="50px">
+                        <img id="im" src="/img/profile.PNG" alt="" height="50px">
+                      </div>
+
+                    </div>
+                  </div>
+                  <div id="size" class="col-5 ms-4 d-flex align-items-center">
+
+                    <div>
+
+                      <p id="fname"></p>
+
+                      <p id="lname"></p>
+                      <p id="gmail"></p>
+                      <p id="phone"></p>
+                      <p id="gend"></p>
+                      <p id="locate"></p>
+                      <input class="text-center " type="password" id="pass" disabled>
+                    </div>
+
+
+                  </div>
+
+
+                </div>
+              </div>
+            </div>
+          </section>
+
+        </div>
 
 
 
-  <script src="./bootstrap.js"></script>
+      </main>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/feather-icons@4.28.0/dist/feather.min.js"
+    integrity="sha384-uO3SXW5IuS1ZpFPKugNNWqTZRRglnUJK6UAZ/gxOX80nxEkN9NcGZTftn6RzhGWE"
+    crossorigin="anonymous"></script>
+  <script src="dashboard.js"></script>
+  <script src="bootstrap.js"></script>
   <script>
-     let userdetails = JSON.parse(localStorage.getItem("project"));
-     let user_mail=localStorage.getItem("email")
+    let userdetails = JSON.parse(localStorage.getItem("project"));
+    let user_mail = localStorage.getItem("email")
     //  console.log(userdetails);
-     let emailFinder = userdetails.find((val) =>  val.Email==user_mail);
+    let emailFinder = userdetails.find((val) => val.Email == user_mail);
     console.log(emailFinder);
     if (emailFinder) {
-      
+
       nam2.innerHTML = emailFinder.ffname + '  ' + '  ' + emailFinder.LstName;
       fname.innerHTML = emailFinder.ffname;
       lname.innerHTML = emailFinder.LstName;
       gmail.innerHTML = emailFinder.Email;
       phone.innerHTML = emailFinder.PhoneNumber;
+      gend.innerHTML = emailFinder.Gender
       pass.value = emailFinder.Password;
       locate.innerHTML = emailFinder.Address;
 
@@ -179,5 +187,8 @@
     function choose() {
       location.assign("edit.html")
     }
-    
+
   </script>
+
+</body>
+</html>

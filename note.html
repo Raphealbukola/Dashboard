@@ -1,176 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./bootstrap.css">
-  <link rel="stylesheet" href="./style.css">
-  <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="side.css">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-  <title>main page</title>
 </head>
-<body >
-  <section class=" mx-auto row   ">
-    <ul id="bgblue" class="sidebar-dropdown   list-unstyled col-lg-2 col-md-4   text-center">
-      <li id="user" class="col-12 text-light d-flex  pt-3  ">
-        <img id="img" src="img/profile.PNG" alt="" height="60px">
-        <div class="">
-          <div class="">
-            <div class=" ms-3 mt-2">
-              <p id="nam2"></p>
+<body>
+    <header style="background-color:#15283C;" class="navbar sticky-top col-12 justify-content-end    ">
+          <div class="container-fluid ">
+            <div class=" d-flex pe-5">
+              <img id="img" src="img/profile.PNG" alt="" height="40px">
+              <p id="nam2" class="text-light mt-2"></p>
             </div>
-            <p class="text-success">Online</p>
-          </div>
-        </div>
-      </li>
-      <hr class="text-light">
-      <li class="py-2 mt-3 ms-3  fs-4 text-light">General </li>
-      <hr class="text-light">
-      <div class="py-3">
-        <li class="btn1 col-12  ms-3 py-2 "> <i class="fa fa-user-circle text-light" aria-hidden="true"></i> <a class=""
-            href="dashbord.html">Profile</a> </li>
-      </div>
-      <div class="py-3 d-flex">
-
-        <li class="btn1 col-12  ms-3 py-2 "><i class="fa fa-book col-1 text-light" aria-hidden="true"></i><a
-            href="note.html">Notes</a> </li>
-      </div>
-
-      <div class="py-3">
-        <li class="btn1 col-12  ms-3 py-2 "> <i class="fa fa-clock-o text-light" aria-hidden="true"></i> <a class=""
-            href="event.html">Events</a> </li>
-      </div>
-
-      <div class="py-3">
-        <li class="btn1 col-12 ms-3  py-2 "> <i class="fa fa-book text-light" aria-hidden="true"></i> <a class=""
-            href="contact.html">Contact</a> </li>
-      </div>
-      <div class="py-3">
-        <li class="btn1 col-12 ms-3  py-2 "> <i class="fa fa-book text-light" aria-hidden="true"></i> <a class=""
-            href="index.html">Logout</a> </li>
-      </div>
-
-    
-    </ul>
-    <div class="  bg-light col-lg-10 col-md-8 col-sm-11 ">
-      <header>
-        <nav class="navbar navbar-expand-lg col-12  navbar-dark ">
-          <div style="font-family: italic;" class="dress col-1 ms d-flex align-items-center justify-content-center text-light h5">Gpro</div>
-          <div class="container-fluid">
-            <h4 class="nav">Gitpro</h4>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-              aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item ms-4">
-                  <a class="nav-link  nav" href="sign in.html">sign in</a>
-                </li>
-                <li class="nav-item ms-4">
-                  <a class="nav-link   " href="edit.html">Edit</a>
-                </li>
-                <li class="nav-item dropdown ms-5">
-                  <a class="nav-link dropdown-toggle nav" href="#" id="navbarDropdown" role="button"
-                    data-bs-toggle="dropdown" aria-expanded="false">
+              <ul class=" me-auto mb-2 d-flex ">
+                
+                <li class="nav-item dropdown small2 ms-4">
+                  <a  class="nav-link dropdown-toggle nav need1" href="#" id="navbarDropdown " role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
                     Others
                   </a>
+                  <p class=" dropdown-toggle nav need" href="" id="navbarDropdown " role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Add Note
+                  </a>
                   <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item" href="alam.html">Alam</a></li>
-                    <li><a class="dropdown-item" href="currentlocation.html">current location</a></li>
-                  
-                    <li>
-                      <hr class="dropdown-divider">
+                    <li class="col-12">
+                      <a class="dropdown-item" href="signin.html">sign in</a>
                     </li>
-                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                  </ul>
+                    <li class="btn btn-primary mb-3 col-12 need">
+                      <button type="button" class="btn btn-success mb-3  col-12 " data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Add Note
+                      </button>
+                    </li>
+                    <li class="col-12"><a class="dropdown-item" href="alam.html">Alam</a></li>
+        
+        
+                  
+                   
+              </ul>
+              
+            </div>
+            
+         
+          
+        <div class="navbar-nav">
+          <div class="nav-item text-nowrap text-light">
+            <button class="navbar-toggler position-absolute d-md-none collapsed text-light" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon text-light border border-1 "> <i class="fa-solid fa-align-justify"></i></span>
+              </button>
+          </div>
+        </div>
+      </header>
+      <div class="container-fluid">
+        <div  class="row  ">
+            <nav id="sidebarMenu" class="col-md-3 col-lg-2  d-md-block sidebar collapse">
+                <div class="position-sticky ">
+                
+              <ul id="bgblue" class="nav flex-column">
+               
+      <li class="py-2 mt-3 ms-5  fs-5 text-light">General </li>
+      <hr class="text-light">
+                <li class="nav-item ">
+                  <a class="nav-link btn1 ms-5 " href="dashbord.html">
+                    <i class="fa fa-user-circle text-light" aria-hidden="true"></i>
+                    profile
+                  </a>
+                  </li>
+                <li class="nav-item ">
+                  <a class="nav-link btn1 ms-5" href="note.html">
+                    <i class="fa fa-book col-1 text-light" aria-hidden="true"></i>
+                  Note
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link btn1 ms-5" href="event.html">
+                    <i class="fa fa-clock-o text-light" aria-hidden="true"></i>
+                    Event
+                  </a>
+                </li>
+                
+                <li class="nav-item">
+                  <a class="nav-link btn1 ms-5" href="contact.html">
+                    <i class="fa fa-book text-light" aria-hidden="true"></i>
+                    Contact
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link btn1 ms-5" href="index.html">
+                    <span data-feather="layers" class="align-text-bottom"></span>
+                    Logout
+                  </a>
                 </li>
               </ul>
-              <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success text-light btns" type="submit">Search</button>
-              </form>
+      
+            
+              </ul>
             </div>
-          </div>
-        </nav>
-      </header>
-      <section id="main" style="height: 91vh; font-family: italic;" class=" col-12 text-center">
-        
-        <div id="test"class="sticky-top">
-          <h3 class="p-3">Click The Button Below To Add New Note</h3>
-        <button type="button" class="btn btn-primary mb-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
-          clik here 
-        </button>
-        </div>
-
-        <!-- Modal -->
-        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">NOTE</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-              <div class="modal-body">
-                <input type="text" class='form-control p-3' id='titl' placeholder="Tittle">
-                
-                <textarea name="" id="notee" cols="30" rows="10"></textarea>
-
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary" data-bs-dismiss="modal" onclick="dome()">save</button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">NOTE</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-              <div class="modal-body">
-                <input type="text" class='form-control p-3' id='titl2' placeholder="Tittle">
-                
-                <textarea name="" id="notee2" cols="30" rows="10" ></textarea>
-
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary" data-bs-dismiss="modal" onclick="saveEdit()">save</button>
-              </div>
-            </div>
-          </div>
-        </div>
-
-
-        <div id="file" class="col-lg-12 row mx-auto ">
+          </nav>
           
-        </div>
-      </section>
+          <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+            <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+              
+                <section id="main" style="height: 91vh; font-family: italic;" class=" col-12 text-center ">
+                  <div id="test"class="sticky-top ">
+                    <h3 class="big">Click The Button Below To Add New Note</h3>
+                    <h3 class="small"> Add New Note</h3> <br>
+                  <button type="button" class="btn btn-primary mb-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    clik here 
+                  </button>
+                  </div>
         
-
-    </div>
-
-
-
-  </section>
-
-
-
-  <script src="./bootstrap.js"></script>
-  
+            
+                    
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">NOTE</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            <input type="text" class='form-control p-3' id='titl' placeholder="Tittle">
+                            
+                            <textarea name="" id="notee" cols="30" rows="10"></textarea>
+            
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal" onclick="dome()">save</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">NOTE</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            <input type="text" class='form-control p-3' id='titl2' placeholder="Tittle">
+                            
+                            <textarea name="" id="notee2" cols="30" rows="10" ></textarea>
+            
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal" onclick="saveEdit()">save</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+            
+            
+                    <div id="file" class="col-lg-12 row mx-auto ">
+                      
+                    </div>
+                  </section>
+              
+            </div>
+      
+      
+          
+          </main>
+        </div>
+      </div>
+        <script src="https://cdn.jsdelivr.net/npm/feather-icons@4.28.0/dist/feather.min.js" integrity="sha384-uO3SXW5IuS1ZpFPKugNNWqTZRRglnUJK6UAZ/gxOX80nxEkN9NcGZTftn6RzhGWE" crossorigin="anonymous"></script>
+        <script src="dashboard.js"></script>
+  <script src="bootstrap.js"></script>
   <script>
     let all;
     let type = localStorage.note ? JSON.parse(localStorage.getItem("notes")) : [];
     let userdetails = JSON.parse(localStorage.getItem("project"));
     let user_mail = localStorage.getItem("email")
-    //  console.log(type);
+    //  console.log(userdetails);
     let emailFinder = userdetails.find((val) => val.Email == user_mail);
 
     // console.log(emailFinder);
@@ -184,9 +194,9 @@
 
       }
       file.innerHTML = show ? show : "";
-
-
+      
     }
+    
 
 
     // let f = "";
@@ -202,7 +212,7 @@
       emailFinder.note.push({ time: time, date: date, tittle: tittle, note: note });
       userdetails[index] = emailFinder;
       save(userdetails);
-      
+      location.assign("note.html")
       console.log(  date,  tittle, time, note);
    }
     }
@@ -223,6 +233,7 @@
       console.log(userdetails[index]);
       userdetails[index].note = delevent;
       save(userdetails);
+      location.assign("note.html")
     }
     }
     function save(data) {
@@ -253,7 +264,10 @@
       userdetails[index] = emailFinder
       // console.log(userdetails);
       save(userdetails)
+      location.assign("note.html")
 
     }
    
 </script>
+</body>
+</html>

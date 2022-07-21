@@ -16,8 +16,8 @@
           position: relative;
           display: flex;
           flex-direction: column;
-          width: 55vh;
-          height: 87vh !important;
+          /* width: 55vh; */
+          /* height: 87vh !important; */
           pointer-events: auto;
           background-color: #fff;
           background-clip: padding-box;
@@ -25,13 +25,25 @@
           border-radius: 1.9rem;
           outline: 0;
         }
-        @media screen and (max-width:414px){
+        @media (max-width: 767.98px){
           .moback{
-            height: 107vh !important;
-            width: 52vh !important;
+            /* height: 98vh !important; */
+            /* width: 48vh !important; */
           }
           #out{
             height: 94vh !important;
+          }
+          .dd {
+          
+          margin: 5px 0;
+          height: 10px;
+        
+        }
+        }
+        @media (max-width: 320px){
+          .moback{
+            height: 115vh !important;
+          
           }
         }
         .modal-body {
@@ -47,18 +59,28 @@
           height: 14px;
           border: none;
         }
+        
+        h5 a:hover{
+          background-color:#0B5ED7;
+  border-color: white;
+  color:white;
+  border-radius: 10px;
+  /* transform: translateY(6px); */
+  transition: 1s all ease-out;
+
+        }
   </style>
 </head>
 
 <body  class="bg-dark">
   <!-- Button trigger modal -->
-  <div class="container" style="height: 50vh;">
+  <div class="container " >
     
     
     <!-- Modal -->
     <div class="" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog">
-        <div class="moback">
+        <div class="moback col-lg-9 col-lg-5 col-sm-6">
           <div class="modal-body">
             <div class="container mt-2 ">
               <div class="row  justify-content-center mt-5">
@@ -93,8 +115,11 @@
                       <option  value="1">Male</option>
                       <option  value="2">Female</option>
                     </select>
+                    <div>
                      
+                      <h5 class="mt-2">Already have an accunt? <a href="signin.html">sign-in</a></h5>
                       <button  class="btn btn-primary mt-3" onclick="show()" style="margin-left: 43px;" >Sign up</button>
+                    </div>
                   </div>
                 </div>
               </div>
