@@ -16,13 +16,16 @@
 .need1:hover{
   color: white;
 }
+#btn2{
+  margin-left: 60px;
+}
 @media (max-width: 767.98px) {
   #bgblue{
     /* background-color:#15273B; */
   height: 90vh;
-  width: 50%;
+  width: 40%;
   z-index: 1000px;
-margin-top: -90px;
+margin-top: -75px;
 }
 .need{
   display: contents;
@@ -30,13 +33,18 @@ margin-top: -90px;
 .need1{
   display: none;
 }
+#btn2{
+  margin-left: 8px;
+}
+
 .small{
   display:contents;
 }
 .small2{
-  left: -60px;
+  left: -50px;
 
 }
+
 .big{
   display: none;
 }
